@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Store">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVStoreItem1"
+        android:layout_width="379dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="112dp"
+        app:cardBackgroundColor="@color/componentColor"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLItem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/IVSI1"
+                android:layout_width="89dp"
+                android:layout_height="75dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.526"
+                tools:srcCompat="@drawable/aeonlogo" />
+
+            <TextView
+                android:id="@+id/TVSI1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jua"
+                android:text="Aeon 15% Off Voucher"
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.913"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/IVCoin1"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:srcCompat="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/TVSI1Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jua"
+                android:text="1500"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVStoreItem2"
+        android:layout_width="379dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/componentColor"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CVStoreItem1"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLItem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/IVSI2"
+                android:layout_width="89dp"
+                android:layout_height="75dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.526"
+                tools:srcCompat="@drawable/watsonlogo" />
+
+            <TextView
+                android:id="@+id/TVSI2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jua"
+                android:text="Watsons RM5 Voucher"
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/IVCoin2"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.47"
+                app:srcCompat="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/TVSI2Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jua"
+                android:text="500"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVStoreItem3"
+        android:layout_width="379dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/componentColor"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CVStoreItem2"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLItem3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/IVSI3"
+                android:layout_width="89dp"
+                android:layout_height="75dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.526"
+                tools:srcCompat="@drawable/tnglogo" />
+
+            <TextView
+                android:id="@+id/TVSI3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jua"
+                android:text="TNG RM10 Reload Pin"
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.898"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/IVCoin"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/TVSI3Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jua"
+                android:text="1000"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVStoreItem4"
+        android:layout_width="379dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/componentColor"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CVStoreItem3"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLItem4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/IVSI4"
+                android:layout_width="89dp"
+                android:layout_height="75dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.526"
+                tools:srcCompat="@drawable/tnglogo" />
+
+            <TextView
+                android:id="@+id/TVSI4Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jua"
+                android:text="TNG RM20 Reload Pin"
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.872"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/IVCoin4"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.357"
+                app:srcCompat="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/TVSI4Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jua"
+                android:text="2000"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVStoreCredit"
+        android:layout_width="145dp"
+        android:layout_height="41dp"
+        app:cardBackgroundColor="@color/componentColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TVUserCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/jua"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/TVUserCredit"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.454"
+                app:srcCompat="@drawable/coin" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
